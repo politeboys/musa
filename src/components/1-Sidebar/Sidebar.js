@@ -11,10 +11,10 @@ const Sidebar = () => {
                         <img style={{width: "100%"}} src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
                     </Grid>
                     <Grid className={styles.linkItems} item container direction="column">
-                        <Link href="/about">About</Link>
-                        <Link href="/jobs">Jobs</Link>
-                        <Link href="/contact">Contact</Link>
-                        <Link href="/colophon">Colophon</Link>
+                        <Link href="/about"><a>About</a></Link>
+                        <Link href="/jobs"><a>Jobs</a></Link>
+                        <Link href="/contact"><a>Contact</a></Link>
+                        <Link href="/colophon"><a>Colophon</a></Link>
                     </Grid>
                 </Grid>
             </nav>
