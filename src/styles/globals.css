@@ -18,9 +18,8 @@ body {
 .body{
   width: 50%;
   max-width: 750px;
+  min-width: 650px;
   margin: auto;
-  /* border-left: 1px solid #999;
-  border-right: 1px solid #999; */
   padding: 85px 95px;
 }
 a {
@@ -44,4 +43,29 @@ li{
 hr{
   border: 0.4px dashed #999;
 }
+@media only screen and (max-width: 900px){
+  .body{
+    
+  width: 100%;
+  margin: auto;
+  padding: 85px 110px;
+  }
+}
+@media only screen and (max-width: 600px){
+  .body{
+    
+  width: 100%;
+  margin: auto;
+  padding: 85px 50px;
+  }
+}
 
+.openNav{
+  display: block !important;
+  position: fixed;
+  background-color: #fff;
+  top: 90px;
+  bottom: 0;
+  left: 0;
+  padding-left: 20px;
+}
