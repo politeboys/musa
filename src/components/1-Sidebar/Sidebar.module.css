@@ -1,0 +1,13 @@
+.nav{
+    position: fixed;
+    top: 90px;
+    left: 120px;
+    overflow: hidden;
+}
+.logo{
+    width: 70px;
+    margin-bottom: 45px;
+}
+.linkItems{
+    line-height: 1.5;
+}
