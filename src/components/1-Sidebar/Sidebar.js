@@ -6,7 +6,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 
 const Sidebar = () => {
 
-    if(true){
+    
         var openNav = () => {
             const bar = document.getElementById('bar')
             bar.classList.add('openNav')
@@ -14,11 +14,14 @@ const Sidebar = () => {
         var closeNav = () => {
             const bar = document.getElementById('bar')
             bar.classList.remove('openNav')
-        }}
+        }
 
-    // const [bar, setBar] = useState({openNav})
+    // const [bar, setBar] = useState({closeNav})
     // if(openNav){
     //     setBar(closeNav)
+    // }
+    // if(!openNav){
+    //     setBar(openNav)
     // }
 
 
@@ -27,8 +30,8 @@ const Sidebar = () => {
                 <Grid container>
                     <Grid className={styles.mobileBar} item container justify="space-between" alignItems="center">
                         <div className={styles.logo}><img style={{width: "100%"}} src="/vercel.svg" alt="Vercel Logo" className={styles.logo} /></div>
-                        <IconButton onClick={openNav} className={styles.bar}>
-                            <MenuIcon/>
+                        <IconButton className={styles.bar}>
+                            <MenuIcon onClick={openNav} />
                         </IconButton>
                     </Grid>
                     <Grid id="bar" className={styles.linkItems} item container direction="column">
