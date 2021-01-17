@@ -43,7 +43,19 @@ li{
 hr{
   border: 0.4px dashed #999;
 }
+.mobile{
+  display: none !important;
+}
 @media only screen and (max-width: 900px){
+  .dsk{
+    display: none !important;
+  }
+  .mobile{
+    display: block !important;
+  }
+  body{
+    font-size: 16px;
+  }
   .body{
     width: 100%;
     margin: auto;
